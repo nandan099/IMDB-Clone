@@ -26,9 +26,6 @@ function Movies() {
         setMovies(res.data.results);
         console.log(res.data.results);
       })
-      .catch((err) => {
-        console.error(err);
-      });
   }, [pageNo]);
 
   return (
