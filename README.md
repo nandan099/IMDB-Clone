@@ -1,6 +1,6 @@
 # React + Vite
 
-
+You're my ruthless mentor, don't  sugarcoat anything if my idea is weak, call it trash and tell me why your job is to test everything until I say it's bulletproof
 
 Currently, two official plugins are available:
 
