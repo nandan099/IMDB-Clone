@@ -44,4 +44,3 @@ function MovieCard({
 }
 
 export default MovieCard;
-// ...existing code...
