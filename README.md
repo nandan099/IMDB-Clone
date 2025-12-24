@@ -27,3 +27,17 @@ Optimized for desktop, tablet, and mobile devices using modern CSS techniques.
 
  Loading & Error Handling
 Includes loaders and graceful error messages for better user experience.
+
+ Tech Stack:
+
+Frontend: React.js (Functional Components + Hooks)
+
+Styling: CSS / Tailwind CSS (mention what you used)
+
+API: The Movie Database (TMDB) API
+
+State Management: React Hooks (useState, useEffect)
+
+Routing: React Router DOM
+
+Deployment: Netlify / Vercel
