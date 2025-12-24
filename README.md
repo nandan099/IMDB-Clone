@@ -65,3 +65,13 @@ Create an account on TMDB
 Generate an API key
 
 Create a .env file in the root directory
+
+What I Learned
+
+Real-world API integration in React
+
+Handling asynchronous data effectively
+
+Building scalable component structures
+
+Improving UI/UX for production-ready apps
