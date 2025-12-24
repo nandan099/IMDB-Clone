@@ -57,3 +57,11 @@ Props drilling & state lifting
 Responsive design principles
 
 Environment variables for API security
+
+API Configuration:
+
+Create an account on TMDB
+
+Generate an API key
+
+Create a .env file in the root directory
