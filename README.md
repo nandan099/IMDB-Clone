@@ -41,3 +41,19 @@ State Management: React Hooks (useState, useEffect)
 Routing: React Router DOM
 
 Deployment: Netlify / Vercel
+
+Key Concepts Used:
+
+Component-based architecture
+
+API integration using fetch / axios
+
+Conditional rendering
+
+Reusable UI components
+
+Props drilling & state lifting
+
+Responsive design principles
+
+Environment variables for API security
