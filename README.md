@@ -1,16 +1,77 @@
-# React + Vite
+ Features:
 
-You're my ruthless mentor, don't  sugarcoat anything if my idea is weak, call it trash and tell me why your job is to test everything until I say it's bulletproof
+Search Movies & TV Shows
+Search for movies by title with real-time results fetched from an external API.
 
-Currently, two official plugins are available:
+ Trending & Popular Movies
+Displays trending, popular, and top-rated movies dynamically.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Movie Ratings & Votes
+Shows IMDb-style ratings, vote counts, and popularity scores.
 
-## React Compiler
+ Detailed Movie Pages
+View complete movie information including:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Poster & backdrop images
 
-## Expanding the ESLint configuration
+Overview / description
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Release date
+
+Language
+
+Rating & popularity
+
+ Fully Responsive UI
+Optimized for desktop, tablet, and mobile devices using modern CSS techniques.
+
+ Loading & Error Handling
+Includes loaders and graceful error messages for better user experience.
+
+ Tech Stack:
+
+Frontend: React.js (Functional Components + Hooks)
+
+Styling: CSS / Tailwind CSS (mention what you used)
+
+API: The Movie Database (TMDB) API
+
+State Management: React Hooks (useState, useEffect)
+
+Routing: React Router DOM
+
+Deployment: Netlify / Vercel
+
+Key Concepts Used:
+
+Component-based architecture
+
+API integration using fetch / axios
+
+Conditional rendering
+
+Reusable UI components
+
+Props drilling & state lifting
+
+Responsive design principles
+
+Environment variables for API security
+
+API Configuration:
+
+Create an account on TMDB
+
+Generate an API key
+
+Create a .env file in the root directory
+
+What I Learned
+
+Real-world API integration in React
+
+Handling asynchronous data effectively
+
+Building scalable component structures
+
+Improving UI/UX for production-ready apps

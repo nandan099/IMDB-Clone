@@ -61,6 +61,7 @@ export default Movies;
 // https://api.themoviedb.org/3/movie/top_rated?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
 // https://api.themoviedb.org/3/movie/now_playing?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
 // https://api.themoviedb.org/3/movie/popular?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
+<<<<<<< HEAD
 
 
 
@@ -70,3 +71,5 @@ export default Movies;
 
 
 // `https://api.themoviedb.org/3/movie/popular?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=${pageNo}`
+=======
+>>>>>>> 412eec5e66258cba6f0b600bdbc424b09d1635f7
