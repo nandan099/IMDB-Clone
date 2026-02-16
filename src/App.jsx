@@ -1,41 +1,47 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import WatchList from "./components/Watchlist";
 import Movies from "./components/Movies";
 import Banner from "./components/Banner";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  let [watchlist, setWatchList] = useState(() => {
-    let moviesFromLocalStorage = localStorage.getItem("moviesApp");
-    if (!moviesFromLocalStorage) {
-      return [];
-    }
-    return JSON.parse(moviesFromLocalStorage);
+  
+  const [watchlist, setWatchList] = useState(() => {
+    const savedMovies = localStorage.getItem("moviesApp");
+    return savedMovies ? JSON.parse(savedMovies) : [];
   });
 
-  let handleAddtoWatchlist = (movieObj) => {
-    let newWatchList = [...watchlist, movieObj];
-    localStorage.setItem("moviesApp", JSON.stringify(newWatchList));
-    setWatchList(newWatchList);
-    console.log(newWatchList);
+ 
+  useEffect(() => {
+    localStorage.setItem("moviesApp", JSON.stringify(watchlist));
+  }, [watchlist]);
+
+
+  const handleAddtoWatchlist = (movieObj) => {
+    const alreadyExists = watchlist.some(
+      (movie) => movie.id === movieObj.id
+    );
+
+    if (!alreadyExists) {
+      setWatchList((prev) => [...prev, movieObj]);
+    }
   };
 
-  let handleRemoveFromWatchList = (movieObj) => {
-    let filteredWatchlist = watchlist.filter((movie) => {
-      return movie.id !== movieObj.id;
-    });
-    setWatchList(filteredWatchlist);
-    localStorage.setItem("moviesApp", JSON.stringify(filteredWatchlist));
-    console.log(filteredWatchlist);
+
+  const handleRemoveFromWatchList = (movieObj) => {
+    setWatchList((prev) =>
+      prev.filter((movie) => movie.id !== movieObj.id)
+    );
   };
 
   return (
-    <>
-      <BrowserRouter>
-        <Navbar />
+    <BrowserRouter>
+      <div className="min-h-screen bg-gray-50">
+        
+
+        <Navbar watchlist={watchlist} />
 
         <Routes>
           <Route
@@ -63,8 +69,9 @@ function App() {
             }
           />
         </Routes>
-      </BrowserRouter>
-    </>
+
+      </div>
+    </BrowserRouter>
   );
 }
 

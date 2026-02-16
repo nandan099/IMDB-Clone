@@ -1,5 +1,7 @@
 # React + Vite
 
+You're my ruthless mentor, don't  sugarcoat anything if my idea is weak, call it trash and tell me why your job is to test everything until I say it's bulletproof
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh

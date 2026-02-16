@@ -21,7 +21,6 @@ function Movies({ handleAddtoWatchlist, handleRemoveFromWatchlist, watchlist }) 
     axios
       .get(
         `https://api.themoviedb.org/3/movie/popular?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=${pageNo}`
-
       )
        .then(function (res) {
         setMovies(res.data.results);
@@ -62,4 +61,12 @@ export default Movies;
 // https://api.themoviedb.org/3/movie/top_rated?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
 // https://api.themoviedb.org/3/movie/now_playing?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
 // https://api.themoviedb.org/3/movie/popular?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
-//https://api.themoviedb.org/3/movie/popular?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=${pageNo}
+
+
+
+// https://api.themoviedb.org/3/movie/top_rated?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
+// https://api.themoviedb.org/3/movie/now_playing?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
+// https://api.themoviedb.org/3/movie/popular?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
+
+
+// `https://api.themoviedb.org/3/movie/popular?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=${pageNo}`
