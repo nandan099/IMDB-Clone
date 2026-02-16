@@ -3,7 +3,11 @@ import MovieCard from "./MovieCard";
 import axios from "axios";
 import Pagination from "./pagination";
 
-function Movies({ handleAddtoWatchlist, handleRemoveFromWatchlist, watchlist }) {
+function Movies({
+  handleAddtoWatchlist,
+  handleRemoveFromWatchlist,
+  watchlist,
+}) {
   const [movies, setMovies] = useState([]);
   const [pageNo, setPageNo] = useState(1);
 
@@ -20,9 +24,9 @@ function Movies({ handleAddtoWatchlist, handleRemoveFromWatchlist, watchlist }) 
   useEffect(() => {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/popular?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=${pageNo}`
+        `https://api.themoviedb.org/3/movie/popular?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=${pageNo}`,
       )
-       .then(function (res) {
+      .then(function (res) {
         setMovies(res.data.results);
         console.log(res.data.results);
       })
@@ -51,7 +55,11 @@ function Movies({ handleAddtoWatchlist, handleRemoveFromWatchlist, watchlist }) 
           );
         })}
       </div>
-      <Pagination pageNo={pageNo} handleNext={handleNext} handlePrev={handlePrev} />
+      <Pagination
+        pageNo={pageNo}
+        handleNext={handleNext}
+        handlePrev={handlePrev}
+      />
     </div>
   );
 }
@@ -61,15 +69,9 @@ export default Movies;
 // https://api.themoviedb.org/3/movie/top_rated?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
 // https://api.themoviedb.org/3/movie/now_playing?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
 // https://api.themoviedb.org/3/movie/popular?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
-<<<<<<< HEAD
-
-
 
 // https://api.themoviedb.org/3/movie/top_rated?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
 // https://api.themoviedb.org/3/movie/now_playing?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
 // https://api.themoviedb.org/3/movie/popular?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=1
 
-
 // `https://api.themoviedb.org/3/movie/popular?api_key=d7e7715979ce2ae62edda81db501ec11&language=en-US&page=${pageNo}`
-=======
->>>>>>> 412eec5e66258cba6f0b600bdbc424b09d1635f7
