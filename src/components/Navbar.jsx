@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../MOvieLogo.png";
+import Logo from "../MovieLogo.png";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = ({ watchlist = [] }) => {
