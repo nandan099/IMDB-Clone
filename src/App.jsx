@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import WatchList from "./components/Watchlist";
+import WatchList from "./components/WatchList";
 import Movies from "./components/Movies";
 import Banner from "./components/Banner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
